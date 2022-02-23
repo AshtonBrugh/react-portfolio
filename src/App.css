@@ -7,27 +7,33 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .heading {
+  align-self: center;
   font-size: 8vw;
   border: 2.7px solid;
   border-radius: 5px;
   padding: .5vw 25vw;
   background: linear-gradient(#EE9B00, #EE9B00, #AE2012 ,#9B2226);
-  box-shadow: 10px 15px 5px black;
+  box-shadow: 10px 15px 15px black;
 
 }
 
 .nav {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
-  font-size: 5vh;
-
+  justify-content: space-between;
+  font-size: 6vw;
+  margin: 1vw 8vw;
 }
+
 
 .noDecoration, a:link, a:visited {
   text-decoration: none;
+  color: black;
+}
+
+.noDecoration:hover {
+  font-style: italic;
 }

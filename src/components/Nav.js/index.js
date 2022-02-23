@@ -13,6 +13,9 @@ function Nav() {
                     <li>
                         <a className="noDecoration" href="#contact">Contact</a>
                     </li>
+                    <li>
+                        <a className="noDecoration" href="#resume">Resume</a>
+                    </li>
                     </ul>
                 </nav>
         </header>
