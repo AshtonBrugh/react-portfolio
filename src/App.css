@@ -29,11 +29,12 @@ body {
 }
 
 
-.noDecoration, a:link, a:visited {
+.nav-item {
   text-decoration: none;
   color: black;
 }
 
-.noDecoration:hover {
-  font-style: italic;
+.nav-item-active {
+  background-color: red;
 }
+
