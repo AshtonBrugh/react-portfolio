@@ -1,7 +1,6 @@
 body {
   background-color: #E9D8A6;
   font-family: 'Amatic SC', cursive;
-
 }
 
 .header {
@@ -35,6 +34,41 @@ body {
 }
 
 .nav-item-active {
-  background-color: red;
+  color: black;
+  text-decoration: none;
+  background-color: #0A9396;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: .5rem;
+}
+
+.container {
+  background-color: #94D2BD;
+  margin: 20vh;
+  display: flex;
+  justify-content: center;
+  border: 2.7px solid;
+  border-radius: 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-form {
+  margin: 3vh;
+  margin-top: 0;
+  font-family: 'Amatic SC', cursive;
+  padding: 1vh 10vh;
+  border: .15vw solid black;
+  border-radius: 4px;
+  font-size: 4.5vw;
+  outline: none;
+}
+
+.input-label {
+  font-size: 5vw;
 }
 
