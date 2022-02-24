@@ -26,18 +26,19 @@ function Contact() {
         e.preventDefault();
 
         if(!validateEmail(email)) {
-            setErrorMessage('Email is invalid!');
+            setErrorMessage('Your email is invalid!');
             return;
-        }
+        };
         setName('');
         setEmail('');
         setMessage('');
-        alert(`Thanks ${name}! `)
     };
 
     return (
-        <div className="container">
+    
+        <div className="container-contact">
             <form className = "form">
+            <h1 className="contact-header">Contact Me </h1>
                 <p className="input-label">Name: </p>
                 <input className="input-form"
                 value={name}
@@ -54,6 +55,12 @@ function Contact() {
                 type="email"
                 placeholder="email"
             />
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
+            
                 <p className="input-label">Send me a message!</p>
                 <textarea className="input-form"
                 value={message}
@@ -63,15 +70,10 @@ function Contact() {
                 placeholder="message"
             />
 
-            <button type="button" onClick={handleFormSubmit}>
+            <button className="btn" type="button" onClick={handleFormSubmit}>
                 Submit
             </button>
             </form>
-            {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-            )}
         </div>
         
     );

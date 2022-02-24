@@ -42,10 +42,20 @@ body {
   padding: .5rem;
 }
 
-.container {
+.container-contact {
   background-color: #94D2BD;
   margin: 20vh;
   display: flex;
+  justify-content: center;
+  border: 2.7px solid;
+  border-radius: 4px;
+}
+
+.container-about {
+  background-color: #EE9B00;
+  margin: 20vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   border: 2.7px solid;
   border-radius: 4px;
@@ -58,10 +68,8 @@ body {
 }
 
 .input-form {
-  margin: 3vh;
   margin-top: 0;
   font-family: 'Amatic SC', cursive;
-  padding: 1vh 10vh;
   border: .15vw solid black;
   border-radius: 4px;
   font-size: 4.5vw;
@@ -70,5 +78,52 @@ body {
 
 .input-label {
   font-size: 5vw;
+}
+
+.contact-header {
+  font-size: 5vw;
+  display: flex;
+  margin: 5vw;
+  border-bottom: 0.4vh solid black;
+  
+}
+
+.btn {
+  font-family: 'Amatic SC', cursive;
+  margin: 4vh;
+  font-size: 4vh;
+  border: 0.3vh solid black;
+  border-radius: 4px;
+  background-color: #EE9B00;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border: .4vh solid black;
+  font-size: 5.5vh;
+}
+
+.error-text {
+  font-size: 4.4vw;
+  font-weight: bolder;
+  color: #AE2012;
+  border-bottom: .3vh solid #AE2012;
+}
+
+.portrait {
+  border: solid 2px black;
+  border-radius: 4px;
+  margin: 5vw;
+}
+
+.about-header {
+  display: flex;
+  justify-content: center;
+  font-size: 5vw;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: .4vh;
+  text-underline-offset: 1.3vh;
+
 }
 
