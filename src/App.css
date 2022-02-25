@@ -110,10 +110,15 @@ body {
   border-bottom: .3vh solid #AE2012;
 }
 
+.about {
+  display: flex;
+}
+
 .portrait {
   border: solid 2px black;
   border-radius: 4px;
   margin: 5vw;
+  display: flex;
 }
 
 .about-header {
@@ -125,5 +130,11 @@ body {
   text-decoration-thickness: .4vh;
   text-underline-offset: 1.3vh;
 
+}
+
+.about-text {
+font-size: 5vh;
+margin-top: 6vh;
+margin-right: 1vw;
 }
 
