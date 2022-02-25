@@ -8,7 +8,6 @@ function About () {
             <img 
             alt="the developer at the grand canyon" 
             src={portrait} className="portrait"
-            style={{ width: "50%" }}
             ></img>
             <p className="about-text">Hi! My name is Ashton Brugh and this is my portfolio using React. 
             I am currently enrolled in the UNC Chapel Hill Coding and Web Programming Boot Camp where I discovered
