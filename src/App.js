@@ -6,6 +6,7 @@ import About from './components/About.js';
 import Portfolio from './components/Portfolio.js';
 import Contact from './components/Contact.js';
 import Resume from './components/Resume.js';
+import Footer from './components/Footer.js';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Header />
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Footer />
     </div>
   );
 }

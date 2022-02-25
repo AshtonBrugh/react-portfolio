@@ -7,6 +7,8 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const [blurNameMessage, setBlurNameMessage] = useState('');
+    const [blurEmailMessage, setBlurEmailMessage] = useState('');
     const [blurMessage, setBlurMessage] = useState('');
   
     const handleInputChange = (e) => {
@@ -23,11 +25,24 @@ function Contact() {
         }
     }
 
-    const handleBlur= (e) => {
+    const handleBlurName= (e) => {
         e.preventDefault();
-        setBlurMessage(`${e.target.name} is required!`)
+        setBlurNameMessage(`A name is required!`)
         
     };
+
+    const handleBlurEmail= (e) => {
+        e.preventDefault();
+        setBlurEmailMessage(`An email is required!`)
+        
+    };
+
+    const handleBlurMessage= (e) => {
+        e.preventDefault();
+        setBlurMessage(`A message is required!`)
+        
+    };
+
 
 
     const handleFormSubmit = (e) => {
@@ -47,33 +62,37 @@ function Contact() {
         <div className="container-contact">
             <form className = "form">
             <h1 className="contact-header">Contact Me </h1>
-
-            {blurMessage && (
-                    <div>
-                        <p className="error-text">{blurMessage}</p>
-                    </div>
-                )}
-
-                
                 <p className="input-label">Name: </p>
                 <input className="input-form"
                 value={name}
                 name="name"
                 onChange={handleInputChange}
-                onBlur={handleBlur}
+                onBlur={handleBlurName}
                 type="name"
                 placeholder="name"
             />
+               {blurNameMessage && (
+                    <div>
+                        <p className="error-text">{blurNameMessage}</p>
+                    </div>
+                )}
                 
                 <p className="input-label">Email:</p>
                 <input className="input-form"
                 value={email}
                 name="email"
-                onBlur={handleBlur}
+                onBlur={handleBlurEmail}
                 onChange={handleInputChange}
                 type="email"
                 placeholder="email"
             />
+
+                {blurEmailMessage && (
+                    <div>
+                        <p className="error-text">{blurEmailMessage}</p>
+                    </div>
+                )}  
+
                 {errorMessage && (
                     <div>
                         <p className="error-text">{errorMessage}</p>
@@ -84,11 +103,17 @@ function Contact() {
                 <textarea className="input-form"
                 value={message}
                 name="message"
-                onBlur={handleBlur}
+                onBlur={handleBlurMessage}
                 onChange={handleInputChange}
                 type="message"
                 placeholder="message"
             />
+
+                {blurMessage && (
+                    <div>
+                        <p className="error-text">{blurMessage}</p>
+                    </div>
+                )}  
              
             <button className="btn" type="button" onClick={handleFormSubmit}>
                 Submit
