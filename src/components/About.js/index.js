@@ -12,7 +12,7 @@ function About () {
             <p className="about-text">Hi! My name is Ashton Brugh and this is my portfolio using React. 
             I am currently enrolled in the UNC Chapel Hill Coding and Web Programming Boot Camp where I discovered
             my passion for front end development. On a personal note, I live in Raleigh, North Carolina. I enjoy
-            live music, spending time outdoors, travelling, reading, and spending time with my family.</p>
+            live music, being outdoors, travelling, reading, and spending time with my family.</p>
         </div>
         </div>
        
