@@ -38,13 +38,20 @@ const Portfolio = ({ work }) => {
 
      return (
             <div className="portfolio-container">
+                <h1 className="portfolio-header">My Work</h1>
             {currentWork.map((image, i) => (
-                <img
-                src={require(`../../assets/images/${i}.jpg`)}
-                alt={image.name}
-                key={image.name}
-                className="work-image"
-                />
+                <div key={image.name} className ="portfolio-div">
+                    <h2 className="image-name">{image.name}</h2>
+                    <a href={image.deployed} target="_blank" rel='noreferrer' className="ahref">
+                    <img
+                    src={require(`../../assets/images/${i}.jpg`)}
+                    alt={image.name}
+                    key={image.name}
+                    className="work-image"
+                 />
+                 </a>
+                 <a href={image.github} target="_blank" rel='noreferrer' className="gitlink">{image.github}</a>
+                </div>
             ))}
             </div>
         );

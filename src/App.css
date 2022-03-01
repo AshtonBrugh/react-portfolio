@@ -130,7 +130,7 @@ body {
   width: 50%;
 }
 
-.about-header {
+.about-header, .portfolio-header {
   display: flex;
   justify-content: center;
   font-size: 5vw;
@@ -178,9 +178,40 @@ padding: 2vw;
 
 .work-image {
   width: 50%;
-  height: 50%;
   margin: 5vh;
-  border: 2.7px solid;
-  border-radius: 4px;
+  margin-top: 2vh;
+  border: .3vh black solid;
+  border-radius: 1%;
+  padding: 0px;
+  position: relative;
 
 }
+
+.work-image:hover {
+  width: 60%;
+  transition-duration: 0.5s;
+}
+
+.portfolio-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-name {
+  font-size: 5vw;
+}
+
+.ahref {
+  display: flex;
+  justify-content: center;
+}
+
+.gitlink {
+  font-size: 4vw;
+  color: black;
+  margin-bottom: 4vw;
+  text-decoration-thickness: 0.2vw;
+
+}
+
