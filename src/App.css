@@ -85,14 +85,6 @@ body {
   font-size: 5vw;
 }
 
-.contact-header {
-  font-size: 5vw;
-  display: flex;
-  margin: 5vw;
-  border-bottom: 0.4vh solid black;
-  
-}
-
 .btn {
   font-family: 'Amatic SC', cursive;
   margin: 4vh;
@@ -102,7 +94,7 @@ body {
   background-color: #EE9B00;
 }
 
-.btn:hover {
+.btn:hover, .resume-link:hover  {
   cursor: pointer;
   border: .4vh solid black;
   font-size: 5.5vh;
@@ -130,7 +122,10 @@ body {
   width: 50%;
 }
 
-.about-header, .portfolio-header {
+.about-header, 
+.portfolio-header, 
+.resume-header,
+.contact-header {
   display: flex;
   justify-content: center;
   font-size: 5vw;
@@ -214,4 +209,50 @@ padding: 2vw;
   text-decoration-thickness: 0.2vw;
 
 }
+
+.resume-container {
+  background-color: #005F73;
+  display: flex;
+  color: #EE9B00;
+  flex-direction: column;
+  align-items: center;
+  border: 2.7px black solid;
+  border-radius: 4px;
+  width: 90%;
+  margin: auto;
+  margin-top: 8vh;
+
+}
+
+.underline {
+  text-decoration-thickness: .4vh;
+  text-underline-offset: 1.3vh;
+}
+
+.front-end-list {
+  font-size: 4.5vw;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-list {
+  display: flex;
+}
+
+.resume-link {
+  font-size: 2vw;
+  text-decoration: none;
+  color: #005F73;
+  background-color: #EE9B00;
+  border: 2.7px black solid;
+  border-radius: 4px;
+  margin-bottom: 4vh;
+  padding: .2vw;
+  
+
+}
+
+
 
